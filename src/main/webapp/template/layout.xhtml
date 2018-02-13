@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:outputStylesheet name="css/semantic.css" />
+<h:head>
+	<title>Template</title>
+</h:head>
+<h:body>
+	<div class="ui justified container">
+		<div class="ui secondary  menu">
+			<a class="item"> Home </a> <a class="item"> Messages </a> <a
+				class="item active"> Friends </a>
+			<div class="right menu">
+				<div class="item">
+					<div class="ui icon input">
+						<input type="text" placeholder="Search..." /><i
+							class="search link icon"></i>
+					</div>
+				</div>
+				<a class="ui item"> Logout </a>
+			</div>
+		</div>
+		<ui:insert name="content">Main Content</ui:insert>
+	</div>
+	<h:outputScript name="js/jquery.js" />
+	<h:outputScript name="js/semantic.js" />
+</h:body>
+</html>
